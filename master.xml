@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <groups>
+  		<run>
+  			<include name="sanity"/>
+  			<include name="regression"/>
+  			<include name="master"/>
+  			<include name="negative"/>
+  			<exclude name=""/>
+  		</run>
+  </groups>
+
+  <listeners>
+  	<listener class-name="utilities.ExtentReportManager"></listener>
+  </listeners>
+  
+  <test thread-count="5" name="Test">
+  	<parameter name="os" value="windows"/>
+  	<parameter name="browser" value="chrome"/>
+  	
+    <classes>
+      <class name="testCases.cabBooking"/>
+      <class name="testCases.Gift_Card"/>
+      <class name="testCases.Hotel_Section"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
