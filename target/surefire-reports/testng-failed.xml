@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <include name="regression"/>
+        <include name="master"/>
+        <include name="negative"/>
+        <exclude name=""/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.Hotel_Section">
+        <methods>
+          <include name="tearDown"/>
+          <include name="get_the_list_of_number_of_adults_and_print_it"/>
+          <include name="setup"/>
+          <include name="test_user_clicks_on_guest_button_and_then_on_adults"/>
+        </methods>
+      </class> <!-- testCases.Hotel_Section -->
+      <class name="testCases.Gift_Card">
+        <methods>
+          <include name="tearDown"/>
+          <include name="test_click_on_buy_now_and_capture_the_error_message"/>
+          <include name="setup"/>
+          <include name="test_user_selects_wedding_gift_card_and_selects_email_option"/>
+          <include name="test_scrolll_to_that_field_and_enter_invalid_email"/>
+          <include name="test_user_clicks_on_more_tab_and_selects_giftcard_option"/>
+        </methods>
+      </class> <!-- testCases.Gift_Card -->
+      <class name="testCases.cabBooking">
+        <methods>
+          <include name="tearDown"/>
+          <include name="user_prints_the_lowest_car_price"/>
+          <include name="setup"/>
+          <include name="user_selects_car_type_as_suv"/>
+          <include name="user_enters_date_and_time_and_click_on_search"/>
+          <include name="test_user_enters_from_and_to_locations"/>
+        </methods>
+      </class> <!-- testCases.cabBooking -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

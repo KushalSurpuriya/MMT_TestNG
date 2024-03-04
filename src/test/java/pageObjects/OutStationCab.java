@@ -14,6 +14,13 @@ public class OutStationCab extends BasePage {
 	//public WebDriver driver;
 	String str;
 	
+	@FindBy(xpath="//i[@class = 'wewidgeticon we_close']")
+	public WebElement pop;
+	
+	public WebElement PopUp() throws InterruptedException {
+			return pop;
+		 }
+	
 	@FindBy (xpath="//li[@class='menu_Cabs']")
 	public WebElement cab_Button;
 	

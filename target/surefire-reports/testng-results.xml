@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-01T11:34:11 IST" name="Suite" finished-at="2024-03-01T11:36:25 IST" duration-ms="133546">
+  <suite started-at="2024-03-04T12:27:15 IST" name="Suite" finished-at="2024-03-04T12:30:05 IST" duration-ms="169749">
     <groups>
       <group name="negative">
         <method signature="Gift_Card.test_scrolll_to_that_field_and_enter_invalid_email()[pri:7, instance:testCases.Gift_Card@13d73fa]" name="test_scrolll_to_that_field_and_enter_invalid_email" class="testCases.Gift_Card"/>
@@ -40,23 +40,23 @@
         <method signature="Hotel_Section.get_the_list_of_number_of_adults_and_print_it()[pri:12, instance:testCases.Hotel_Section@5023bb8b]" name="get_the_list_of_number_of_adults_and_print_it" class="testCases.Hotel_Section"/>
       </group> <!-- master -->
     </groups>
-    <test started-at="2024-03-01T11:34:11 IST" name="Test" finished-at="2024-03-01T11:36:25 IST" duration-ms="133546">
+    <test started-at="2024-03-04T12:27:15 IST" name="Test" finished-at="2024-03-04T12:30:05 IST" duration-ms="169749">
       <class name="testCases.Hotel_Section">
-        <test-method signature="test_user_clicks_on_hotels_tab()[pri:10, instance:testCases.Hotel_Section@5023bb8b]" started-at="2024-03-01T11:36:05 IST" name="test_user_clicks_on_hotels_tab" finished-at="2024-03-01T11:36:06 IST" duration-ms="600" status="PASS">
+        <test-method signature="test_user_clicks_on_hotels_tab()[pri:10, instance:testCases.Hotel_Section@5023bb8b]" started-at="2024-03-04T12:29:46 IST" name="test_user_clicks_on_hotels_tab" finished-at="2024-03-04T12:29:46 IST" duration-ms="634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_user_clicks_on_hotels_tab -->
-        <test-method signature="test_user_clicks_on_guest_button_and_then_on_adults()[pri:11, instance:testCases.Hotel_Section@5023bb8b]" started-at="2024-03-01T11:36:06 IST" name="test_user_clicks_on_guest_button_and_then_on_adults" finished-at="2024-03-01T11:36:08 IST" duration-ms="2057" status="PASS">
+        <test-method signature="test_user_clicks_on_guest_button_and_then_on_adults()[pri:11, instance:testCases.Hotel_Section@5023bb8b]" started-at="2024-03-04T12:29:46 IST" name="test_user_clicks_on_guest_button_and_then_on_adults" finished-at="2024-03-04T12:29:50 IST" duration-ms="3962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_user_clicks_on_guest_button_and_then_on_adults -->
-        <test-method signature="get_the_list_of_number_of_adults_and_print_it()[pri:12, instance:testCases.Hotel_Section@5023bb8b]" started-at="2024-03-01T11:36:08 IST" name="get_the_list_of_number_of_adults_and_print_it" finished-at="2024-03-01T11:36:18 IST" duration-ms="10264" status="PASS">
+        <test-method signature="get_the_list_of_number_of_adults_and_print_it()[pri:12, instance:testCases.Hotel_Section@5023bb8b]" started-at="2024-03-04T12:29:50 IST" name="get_the_list_of_number_of_adults_and_print_it" finished-at="2024-03-04T12:30:02 IST" duration-ms="11744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_the_list_of_number_of_adults_and_print_it -->
       </class> <!-- testCases.Hotel_Section -->
       <class name="testCases.cabBooking">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.cabBooking@6179e425]" started-at="2024-03-01T11:34:12 IST" name="setup" finished-at="2024-03-01T11:35:30 IST" duration-ms="78084" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.cabBooking@6179e425]" started-at="2024-03-04T12:27:17 IST" name="setup" finished-at="2024-03-04T12:28:51 IST" duration-ms="94596" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,49 +72,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_user_clicks_on_cab()[pri:0, instance:testCases.cabBooking@6179e425]" started-at="2024-03-01T11:35:30 IST" name="test_user_clicks_on_cab" finished-at="2024-03-01T11:35:31 IST" duration-ms="1187" status="PASS">
+        <test-method signature="test_user_clicks_on_cab()[pri:0, instance:testCases.cabBooking@6179e425]" started-at="2024-03-04T12:28:51 IST" name="test_user_clicks_on_cab" finished-at="2024-03-04T12:29:04 IST" duration-ms="12871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_user_clicks_on_cab -->
-        <test-method signature="test_user_enters_from_and_to_locations()[pri:1, instance:testCases.cabBooking@6179e425]" started-at="2024-03-01T11:35:31 IST" name="test_user_enters_from_and_to_locations" finished-at="2024-03-01T11:35:42 IST" duration-ms="10501" status="PASS">
+        <test-method signature="test_user_enters_from_and_to_locations()[pri:1, instance:testCases.cabBooking@6179e425]" started-at="2024-03-04T12:29:04 IST" name="test_user_enters_from_and_to_locations" finished-at="2024-03-04T12:29:11 IST" duration-ms="6259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_user_enters_from_and_to_locations -->
-        <test-method signature="user_enters_date_and_time_and_click_on_search()[pri:2, instance:testCases.cabBooking@6179e425]" started-at="2024-03-01T11:35:42 IST" name="user_enters_date_and_time_and_click_on_search" finished-at="2024-03-01T11:35:48 IST" duration-ms="6156" status="PASS">
+        <test-method signature="user_enters_date_and_time_and_click_on_search()[pri:2, instance:testCases.cabBooking@6179e425]" started-at="2024-03-04T12:29:11 IST" name="user_enters_date_and_time_and_click_on_search" finished-at="2024-03-04T12:29:20 IST" duration-ms="9657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_enters_date_and_time_and_click_on_search -->
-        <test-method signature="user_selects_car_type_as_suv()[pri:3, instance:testCases.cabBooking@6179e425]" started-at="2024-03-01T11:35:48 IST" name="user_selects_car_type_as_suv" finished-at="2024-03-01T11:35:52 IST" duration-ms="3516" status="PASS">
+        <test-method signature="user_selects_car_type_as_suv()[pri:3, instance:testCases.cabBooking@6179e425]" started-at="2024-03-04T12:29:20 IST" name="user_selects_car_type_as_suv" finished-at="2024-03-04T12:29:24 IST" duration-ms="3311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_selects_car_type_as_suv -->
-        <test-method signature="user_prints_the_lowest_car_price()[pri:4, instance:testCases.cabBooking@6179e425]" started-at="2024-03-01T11:35:52 IST" name="user_prints_the_lowest_car_price" finished-at="2024-03-01T11:35:52 IST" duration-ms="85" status="PASS">
+        <test-method signature="user_prints_the_lowest_car_price()[pri:4, instance:testCases.cabBooking@6179e425]" started-at="2024-03-04T12:29:24 IST" name="user_prints_the_lowest_car_price" finished-at="2024-03-04T12:29:24 IST" duration-ms="90" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- user_prints_the_lowest_car_price -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.cabBooking@6179e425]" started-at="2024-03-01T11:36:18 IST" name="tearDown" finished-at="2024-03-01T11:36:25 IST" duration-ms="6475" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.cabBooking@6179e425]" started-at="2024-03-04T12:30:02 IST" name="tearDown" finished-at="2024-03-04T12:30:05 IST" duration-ms="3065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.cabBooking -->
       <class name="testCases.Gift_Card">
-        <test-method signature="test_user_clicks_on_more_tab_and_selects_giftcard_option()[pri:5, instance:testCases.Gift_Card@13d73fa]" started-at="2024-03-01T11:35:52 IST" name="test_user_clicks_on_more_tab_and_selects_giftcard_option" finished-at="2024-03-01T11:36:00 IST" duration-ms="8331" status="PASS">
+        <test-method signature="test_user_clicks_on_more_tab_and_selects_giftcard_option()[pri:5, instance:testCases.Gift_Card@13d73fa]" started-at="2024-03-04T12:29:24 IST" name="test_user_clicks_on_more_tab_and_selects_giftcard_option" finished-at="2024-03-04T12:29:38 IST" duration-ms="13848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_user_clicks_on_more_tab_and_selects_giftcard_option -->
-        <test-method signature="test_user_selects_wedding_gift_card_and_selects_email_option()[pri:6, instance:testCases.Gift_Card@13d73fa]" started-at="2024-03-01T11:36:00 IST" name="test_user_selects_wedding_gift_card_and_selects_email_option" finished-at="2024-03-01T11:36:03 IST" duration-ms="3376" status="PASS">
+        <test-method signature="test_user_selects_wedding_gift_card_and_selects_email_option()[pri:6, instance:testCases.Gift_Card@13d73fa]" started-at="2024-03-04T12:29:38 IST" name="test_user_selects_wedding_gift_card_and_selects_email_option" finished-at="2024-03-04T12:29:44 IST" duration-ms="6638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_user_selects_wedding_gift_card_and_selects_email_option -->
-        <test-method signature="test_scrolll_to_that_field_and_enter_invalid_email()[pri:7, instance:testCases.Gift_Card@13d73fa]" started-at="2024-03-01T11:36:03 IST" name="test_scrolll_to_that_field_and_enter_invalid_email" finished-at="2024-03-01T11:36:04 IST" duration-ms="897" status="PASS">
+        <test-method signature="test_scrolll_to_that_field_and_enter_invalid_email()[pri:7, instance:testCases.Gift_Card@13d73fa]" started-at="2024-03-04T12:29:44 IST" name="test_scrolll_to_that_field_and_enter_invalid_email" finished-at="2024-03-04T12:29:45 IST" duration-ms="882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_scrolll_to_that_field_and_enter_invalid_email -->
-        <test-method signature="test_click_on_buy_now_and_capture_the_error_message()[pri:8, instance:testCases.Gift_Card@13d73fa]" started-at="2024-03-01T11:36:04 IST" name="test_click_on_buy_now_and_capture_the_error_message" finished-at="2024-03-01T11:36:05 IST" duration-ms="922" status="PASS">
+        <test-method signature="test_click_on_buy_now_and_capture_the_error_message()[pri:8, instance:testCases.Gift_Card@13d73fa]" started-at="2024-03-04T12:29:45 IST" name="test_click_on_buy_now_and_capture_the_error_message" finished-at="2024-03-04T12:29:46 IST" duration-ms="596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_click_on_buy_now_and_capture_the_error_message -->
-        <test-method signature="test_user_prints_the_error_message()[pri:9, instance:testCases.Gift_Card@13d73fa]" started-at="2024-03-01T11:36:05 IST" name="test_user_prints_the_error_message" finished-at="2024-03-01T11:36:05 IST" duration-ms="1" status="PASS">
+        <test-method signature="test_user_prints_the_error_message()[pri:9, instance:testCases.Gift_Card@13d73fa]" started-at="2024-03-04T12:29:46 IST" name="test_user_prints_the_error_message" finished-at="2024-03-04T12:29:46 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_user_prints_the_error_message -->

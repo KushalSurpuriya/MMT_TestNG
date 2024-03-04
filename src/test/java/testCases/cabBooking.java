@@ -1,5 +1,6 @@
 package testCases;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
@@ -16,8 +17,21 @@ public class cabBooking extends BaseClass_TNG{
 	@Test (priority=0, groups= {"sanity","master"})
 	public void test_user_clicks_on_cab() 
 	{
-		log.debug("The user launched the webpage.....");
 		OutStationCab oc = new OutStationCab(driver);
+		//popup
+		try {
+			driver.switchTo().frame("webklipper-publisher-widget-container-notification-frame");	
+			if(oc.PopUp().isDisplayed()) {
+				oc.PopUp().click();
+				System.out.println("Pop Up Displayed and closed successfully.");
+			}else {
+				System.out.println("Pop up not found");
+			}
+			driver.switchTo().defaultContent();
+			}catch (Exception e) {
+				System.out.println("Pop up not found");
+			}
+		log.debug("The user launched the webpage.....");
 		oc.click(oc.cab_Button);
 		log.info("User clicks on cab....");
 	}
@@ -30,8 +44,16 @@ public class cabBooking extends BaseClass_TNG{
 	    oc.getTextofList(oc.fromTabs, from);
 	    //To Location
 	    Thread.sleep(1000);
-		Actions action = new Actions(driver);
-		action.sendKeys(oc.toSearchBar, "Manali").build().perform();
+	    try 
+	    {
+	    	Actions action = new Actions(driver);
+			action.sendKeys(oc.toSearchBar, "Manali").build().perform();
+	    }catch (Exception e) {
+	    	System.out.println("Trying another input"); 
+	    	oc.toSearchBar.clear();
+	    	JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeScript("arguments[0].setAttribute('value','Manali')",oc.toSearchBar);
+	    	}
 	    //oc.sendKeys(oc.toSearchBar,"Manali");
 	    Thread.sleep(2000);
 	    oc.click(oc.toTabs);

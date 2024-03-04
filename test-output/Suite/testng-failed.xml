@@ -17,13 +17,13 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.Hotel_Section">
+      <class name="testCases.cabBooking">
         <methods>
           <include name="tearDown"/>
-          <include name="get_the_list_of_number_of_adults_and_print_it"/>
           <include name="setup"/>
+          <include name="user_enters_date_and_time_and_click_on_search"/>
         </methods>
-      </class> <!-- testCases.Hotel_Section -->
+      </class> <!-- testCases.cabBooking -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
