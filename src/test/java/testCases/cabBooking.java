@@ -14,7 +14,7 @@ public class cabBooking extends BaseClass_TNG{
 	String to = "Manali, himachal Pradesh";
 	public static String lwstPrice;
 
-	@Test (priority=0, groups= {"sanity","master"})
+	@Test (priority=0, groups= {"sanity"})
 	public void test_user_clicks_on_cab() 
 	{
 		OutStationCab oc = new OutStationCab(driver);
@@ -54,7 +54,6 @@ public class cabBooking extends BaseClass_TNG{
 	    	JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("arguments[0].setAttribute('value','Manali')",oc.toSearchBar);
 	    	}
-	    //oc.sendKeys(oc.toSearchBar,"Manali");
 	    Thread.sleep(2000);
 	    oc.click(oc.toTabs);
 	    log.info("User enters from and to locations....");

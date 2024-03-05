@@ -20,7 +20,7 @@ public class Gift_Card extends BaseClass_TNG{
 		log.info("User clicks on more tab and selects Giftcard option....");
 	}
 	
-	@Test(priority=6, groups= {"regression","master"})
+	@Test(priority=6, groups= {"sanity"})
 	public void test_user_selects_wedding_gift_card_and_selects_email_option() throws InterruptedException {
 		GiftCard gc=new  GiftCard(driver);
 		gc.click(gc.select_giftcard);

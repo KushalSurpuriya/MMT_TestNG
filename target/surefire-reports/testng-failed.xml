@@ -10,7 +10,6 @@
     <groups>
       <run>
         <include name="sanity"/>
-        <include name="regression"/>
         <include name="master"/>
         <include name="negative"/>
         <exclude name=""/>
