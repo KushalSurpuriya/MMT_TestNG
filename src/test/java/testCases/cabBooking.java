@@ -14,7 +14,7 @@ public class cabBooking extends BaseClass_TNG{
 	String to = "Manali, himachal Pradesh";
 	public static String lwstPrice;
 
-	@Test (priority=0, groups= {"sanity"})
+	@Test (priority=0, groups= {"smoke","master"})
 	public void test_user_clicks_on_cab() 
 	{
 		OutStationCab oc = new OutStationCab(driver);

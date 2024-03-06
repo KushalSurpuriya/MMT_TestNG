@@ -17,7 +17,7 @@ public class Hotel_Section extends BaseClass_TNG{
 	
 	List<String> count = new ArrayList<String>();
 	
-	@Test (priority=10, groups= {"sanity"})
+	@Test (priority=10, groups= {"smoke","master"})
 	public void test_user_clicks_on_hotels_tab() {
 		Hotel h = new Hotel(driver);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
