@@ -19,6 +19,7 @@ public class ExcelWriteData extends BaseClass_TNG{
 	   
 			System.out.println("==========================="+price);
 			System.out.println("==========================="+errorMsg);
+			
 	    	FileOutputStream file = new FileOutputStream(filePath);
 	        XSSFWorkbook workbook=new XSSFWorkbook();
 	    	XSSFSheet sheet=workbook.createSheet("MMT");

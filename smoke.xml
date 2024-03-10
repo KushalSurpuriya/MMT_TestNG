@@ -6,6 +6,7 @@
   		<run>
   			<include name="smoke"/>
   			<include name="master"/>
+  			<include name="negative"/>
   		</run>
   </groups>
 

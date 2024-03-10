@@ -6,6 +6,7 @@
   		<run>
   			<include name="regression"/>
   			<include name="master"/>
+  			<include name="negative"/>
   		</run>
   </groups>
   

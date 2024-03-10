@@ -1,6 +1,9 @@
 package testCases;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import pageObjects.GiftCard;
@@ -29,7 +32,7 @@ public class Gift_Card extends BaseClass_TNG{
 	    log.info("User selects wedding gift card and selects Email option....");
 	}
 	
-	@Test(priority=7, groups= {"regression","master","negative"})
+	@Test(priority=7, groups= {"master","negative"})
 	public void test_scrolll_to_that_field_and_enter_invalid_email() {
 		GiftCard gc=new  GiftCard(driver);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -43,12 +46,14 @@ public class Gift_Card extends BaseClass_TNG{
 		GiftCard gc=new  GiftCard(driver);
 	    gc.click(gc.cli_buy);
 	    error_msg = gc.getText(gc.get_message);
+	    assertEquals(error_msg, "Please enter a valid Email id.", "Error Message Not Matched");
 	    log.info("click on buy now and capture the error message....");
 	}
 	
 	@Test(priority=9, groups= {"regression","master"})
 	public void test_user_prints_the_error_message() {
-		System.out.println("The Error message is : "+ error_msg);
+		Reporter.log("The Error message is : "+error_msg, true);
+		//System.out.println("The Error message is : "+ error_msg);
 		log.info("User prints the error message....");
 	}
 }

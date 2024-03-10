@@ -39,7 +39,7 @@ public class OutStationCab extends BasePage {
 	@FindBy (xpath="//span[contains (text(), 'Manali, Himachal Pradesh, India')]")
 	public WebElement toTabs;
 	
-	@FindBy(xpath="//div[@aria-label='Sat Mar 09 2024']")
+	@FindBy(xpath="//div[@aria-label='Fri Mar 29 2024']")
 	public WebElement cli_date;
 	
 	@FindBy(xpath="//div[@class='applyBtn']")

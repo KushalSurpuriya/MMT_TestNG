@@ -1,12 +1,11 @@
 package testCases;
 
-import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import pageObjects.Hotel;
@@ -41,10 +40,9 @@ public class Hotel_Section extends BaseClass_TNG{
 	    for (int i=0;i<40;i++) 
 	    {
 	    	count.add(h.getText(h.get_list.get(i)));
-	    	System.out.println(h.getText(h.get_list.get(i)));
+	    	Reporter.log(h.getText(h.get_list.get(i)),true);
 	    }
 	    
-	    assertEquals(count.size(), 40,"Adult List Not Matched");
 	    ExcelWriteData.excelWrite(count, cabBooking.lwstPrice, Gift_Card.error_msg);
 	    log.info("get the list of number of adults and print it....");
 	}

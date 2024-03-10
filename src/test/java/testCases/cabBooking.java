@@ -2,6 +2,7 @@ package testCases;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import pageObjects.OutStationCab;
@@ -23,13 +24,13 @@ public class cabBooking extends BaseClass_TNG{
 			driver.switchTo().frame("webklipper-publisher-widget-container-notification-frame");	
 			if(oc.PopUp().isDisplayed()) {
 				oc.PopUp().click();
-				System.out.println("Pop Up Displayed and closed successfully.");
-			}else {
-				System.out.println("Pop up not found");
+				Reporter.log("Pop Up Displayed and closed successfully.", true);
+				//System.out.println("Pop Up Displayed and closed successfully.");
 			}
 			driver.switchTo().defaultContent();
 			}catch (Exception e) {
-				System.out.println("Pop up not found");
+				Reporter.log("Pop up not found",true);
+				//System.out.println("Pop up not found");
 			}
 		log.debug("The user launched the webpage.....");
 		oc.click(oc.cab_Button);
@@ -49,7 +50,8 @@ public class cabBooking extends BaseClass_TNG{
 	    	Actions action = new Actions(driver);
 			action.sendKeys(oc.toSearchBar, "Manali").build().perform();
 	    }catch (Exception e) {
-	    	System.out.println("Trying another input"); 
+	    	Reporter.log("Trying another input", true);
+	    	//System.out.println("Trying another input"); 
 	    	oc.toSearchBar.clear();
 	    	JavascriptExecutor js = (JavascriptExecutor)driver;
 			js.executeScript("arguments[0].setAttribute('value','Manali')",oc.toSearchBar);
@@ -79,7 +81,8 @@ public class cabBooking extends BaseClass_TNG{
 	public void user_prints_the_lowest_car_price() {
 		OutStationCab oc = new OutStationCab(driver);
 		lwstPrice = oc.getText(oc.get_price);
-	    System.out.println("The Lowest Price of vehicle is : "+ lwstPrice);
+		Reporter.log("The Lowest Price of vehicle is : "+ lwstPrice, true);
+	    //System.out.println("The Lowest Price of vehicle is : "+ lwstPrice);
 	    log.info("User prints the lowest car price....");
 	}
 }
